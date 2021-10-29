@@ -3,54 +3,60 @@
 
 <head>
     <meta charset="utf-8">
-    <title>COVISAFE</title>
+    <title>CoviSafe</title>
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <nav>
-        <img src="assets/images/header.jfif">
+        <img src="assets/images/COVISAFE-logos_white.png">
     </nav>
     <br>
     <div id="part1">
         <form>
             <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
+            <input style="font-family:Source Sans Pro" type="text" id="fname" name="fname"><br><br>
             <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br><br>
+            <input style="font-family:Source Sans Pro" type="text" id="lname" name="lname"><br><br>
             <label for="regno">Reg. No:</label>
-            <input type="text" id="regno" name="regno"><br><br>
+            <input style="font-family:Source Sans Pro" type="text" id="regno" name="regno"><br><br>
             <label for="srmemail">SRM Email:</label>
-            <input type="text" id="srmemail" name="srmemail"><br><br>
+            <input style="font-family:Source Sans Pro" type="text" id="srmemail" name="srmemail"><br><br>
 
 
             <label for="dept">Department:</label>
-            <select id="dept" name="dept">
+            <select style="font-family:Source Sans Pro" id="dept" name="dept">
+                <optgroup style="font-family: 'Source Sans Pro'">
                 <option value="CSE">CSE</option>
                 <option value="EEE">EEE</option>
                 <option value="ECE">ECE</option>
                 <option value="MECH">Mechanical</option>
                 <option value="BIO">Biomedical</option>
+                </optgroup>
             </select>
             <br>
             <br>
             <label for="sec">Section:</label>
-            <select id="sec" name="sec">
+            <select style="font-family:Source Sans Pro" id="sec" name="sec">
+                <optgroup style="font-family: 'Source Sans Pro'">
                 <option value="A1">A1</option>
                 <option value="A2">A2</option>
                 <option value="B1">B1</option>
                 <option value="B2">B2</option>
                 <option value="C1">C1</option>
+                </optgroup>
             </select>
             <br>
             <br>
             <label for="ye">Year:</label>
-            <select id="ye" name="ye">
+            <select style="font-family:Source Sans Pro" id="ye" name="ye">
+                <optgroup style="font-family: 'Source Sans Pro'">
                 <option value="first">1</option>
                 <option value="second">2</option>
                 <option value="third">3</option>
                 <option value="fourth">4</option>
+                </optgroup>
             </select>
             <br>
             <br>
@@ -59,7 +65,7 @@
             <label for="yes">Yes</label>
             <input type="radio" id="no" name="hostel" value="No">
             <label for="no">No</label><br><br>
-
+            <br>
             <button id="next" type="next" form="form1" value="Next">Next</button>
         </form>
     </div>
