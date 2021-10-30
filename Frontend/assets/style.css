@@ -17,7 +17,7 @@ nav img{
    height: 60px;
 }
 
-form input, form select{
+/* form input, form select{
     font-size: 20px;
     margin: 0px 20px 0px 50px;
     border-radius: 8px;
@@ -27,8 +27,8 @@ form input, form select{
 
 form label{
     font-size: 20px;
-}
+}*/
 
-#part1{
+ #part1, #part2{
     margin-left: 30px;
-}
+} 
