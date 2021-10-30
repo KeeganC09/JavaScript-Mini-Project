@@ -8,7 +8,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-form input, form select{
+/* form input, form select{
     font-size: 20px;
     margin: 0px 20px 0px 20px;
     border-radius: 8px;
@@ -18,7 +18,7 @@ form input, form select{
 
 form label{
     font-size: 20px;
-}
+}*/
 
 #part1{
         position: absolute;
