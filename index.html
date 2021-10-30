@@ -71,39 +71,46 @@
     </div>
     <div id="part2">
         <form>
-            <label for="age">AGE:</label><br>
-            <input type="text" id="age" name="age"><br>
-            <p>GENDER:</p>
+            <label for="age">Age:</label>
+            <input style="font-family:Source Sans Pro" type="text" id="age" name="age"><br><br>
+            <label>Gender:</label>
             <input type="radio" id="MALE" name="GENDER" value="MALE">
-            <label for="MALE">MALE</label><br>
+            <label for="MALE">Male</label>
             <input type="radio" id="FEMALE" name="GENDER" value="FEMALE">
-            <label for="FEMALE">FEMALE</label><br>
-            <p>VACCINATED:</p>
+            <label for="FEMALE">Female</label><br><br>
+            <label>Vaccinated:</label>
             <input type="radio" id="YES" name="VACCINATED" value="YES">
-            <label for="YES">YES</label><br>
+            <label for="YES">Yes</label>
             <input type="radio" id="NO" name="VACCINATED" value="NO">
-            <label for="NO">NO</label><br>
-            <p>VACCINATION STATUS:</p>
+            <label for="NO">No</label><br><br>
+            <label>Vaccination Status:</label>
             <label for="DOSE"></label>
-            <select name="DOSE" id="DOSE">
-                <option value="1st DOSE">1st DOSE</option>
-                <option value="2nd DOSE">2nd DOSE</option>
+            <select style="font-family:Source Sans Pro" name="DOSE" id="DOSE"> 
+                <optgroup style="font-family: 'Source Sans Pro'">
+                    <option value="1st DOSE">1st Dose</option>
+                    <option value="2nd DOSE">2nd Dose</option>
+                </optgroup>
+               
             </select>
-            <p>IF CONTRACTED COVID BEFORE:</p>
-            <input type="radio" id="YES" name="VACCINATED" value="YES">
-            <label for="YES">YES</label><br>
-            <input type="radio" id="NO" name="VACCINATED" value="NO">
-            <label for="NO">NO</label><br>
-            <br>
-            <label for="HOME STATE">HOME STATE:</label><br>
-            <input type="text" id="HOME STATE" name="HOME STATE"><br>
-            <p>VACCINATION CERTIFICATE:</p>
-            <input type="file" id="myFile" name="filename">
-            <br>
-            <p>RTPCR TEST REPORT:</p>
-            <input type="file" id="myFile" name="filename">
             <br><br>
-            <input type="SUBMIT">
+            <label>If contracted COVID Before:</label><br><br>
+            <input type="radio" id="YES" name="VACCINATED" value="YES">
+            <label for="YES">Yes</label><br><br>
+            <input type="radio" id="NO" name="VACCINATED" value="NO">
+            <label for="NO">No</label><br><br>
+            <label for="HOME STATE">Home State:</label>
+            <input style="font-family:Source Sans Pro" type="text" id="HOME STATE" name="HOME STATE"><br><br>
+            <label>Vaccination Certificate:</label><br><br>
+            <input style="font-family:Source Sans Pro" type="file" id="myFile" name="filename">
+            <br><br>
+            <label>RTPCR Test Report:</label><br>
+            <p></p>
+            <input style="font-family:Source Sans Pro" type="file" id="myFile" name="filename">
+            <br><br><br><br>
+            <button id="previous" type="PREVIOUS" form="form2" value="PREVIOUS">Previous</button>
+            <br><br>
+            <button id="submit" type="SUBMIT" form = "form2" value="SUBMIT">Submit</button>
+           
     </div>
 
     <script src="./assets/main.js"></script>

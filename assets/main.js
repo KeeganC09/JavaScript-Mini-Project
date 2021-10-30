@@ -4,4 +4,8 @@ $(document).ready(function () {
         $("#part1").hide();
         $("#part2").show();
     })
+    $("#previous").click(function () {
+        $("#part2").hide();
+        $("#part1").show();
+    })
 });
