@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>CoviSafe</title>
+    <link rel="icon" type="image/png" href="./assets/images/COVISAFE-logo.png">
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -22,17 +23,17 @@
             <label for="regno">Reg. No:</label>
             <input style="font-family:Source Sans Pro" type="text" id="regno" name="regno"><br><br>
             <label for="srmemail">SRM Email:</label>
-            <input style="font-family:Source Sans Pro" type="text" id="srmemail" name="srmemail"><br><br>
+            <input style="font-family:Source Sans Pro" type="email" id="srmemail" name="srmemail"><br><br>
 
 
             <label for="dept">Department:</label>
             <select style="font-family:Source Sans Pro" id="dept" name="dept">
                 <optgroup style="font-family: 'Source Sans Pro'">
-                <option value="CSE">CSE</option>
-                <option value="EEE">EEE</option>
-                <option value="ECE">ECE</option>
-                <option value="MECH">Mechanical</option>
-                <option value="BIO">Biomedical</option>
+                    <option value="CSE">CSE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="MECH">Mechanical</option>
+                    <option value="BIO">Biomedical</option>
                 </optgroup>
             </select>
             <br>
@@ -40,22 +41,22 @@
             <label for="sec">Section:</label>
             <select style="font-family:Source Sans Pro" id="sec" name="sec">
                 <optgroup style="font-family: 'Source Sans Pro'">
-                <option value="A1">A1</option>
-                <option value="A2">A2</option>
-                <option value="B1">B1</option>
-                <option value="B2">B2</option>
-                <option value="C1">C1</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
                 </optgroup>
             </select>
             <br>
             <br>
-            <label for="ye">Year:</label>
-            <select style="font-family:Source Sans Pro" id="ye" name="ye">
+            <label for="year">Year:</label>
+            <select style="font-family:Source Sans Pro" id="year" name="year">
                 <optgroup style="font-family: 'Source Sans Pro'">
-                <option value="first">1</option>
-                <option value="second">2</option>
-                <option value="third">3</option>
-                <option value="fourth">4</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                 </optgroup>
             </select>
             <br>
@@ -69,10 +70,10 @@
             <button id="next" type="next" form="form1" value="Next">Next</button>
         </form>
     </div>
-    <div id="part2">
+    <div id="part2" action="http://localhost:8006/data" method="POST">
         <form>
             <label for="age">Age:</label>
-            <input style="font-family:Source Sans Pro" type="text" id="age" name="age"><br><br>
+            <input style="font-family:Source Sans Pro" type="number" id="age" name="age"><br><br>
             <label>Gender:</label>
             <input type="radio" id="MALE" name="GENDER" value="MALE">
             <label for="MALE">Male</label>
@@ -85,21 +86,21 @@
             <label for="NO">No</label><br><br>
             <label>Vaccination Status:</label>
             <label for="DOSE"></label>
-            <select style="font-family:Source Sans Pro" name="DOSE" id="DOSE"> 
+            <select style="font-family:Source Sans Pro" name="DOSE" id="DOSE">
                 <optgroup style="font-family: 'Source Sans Pro'">
                     <option value="1st DOSE">1st Dose</option>
                     <option value="2nd DOSE">2nd Dose</option>
                 </optgroup>
-               
+
             </select>
             <br><br>
             <label>If contracted COVID Before:</label><br><br>
-            <input type="radio" id="YES" name="VACCINATED" value="YES">
-            <label for="YES">Yes</label><br><br>
-            <input type="radio" id="NO" name="VACCINATED" value="NO">
-            <label for="NO">No</label><br><br>
-            <label for="HOME STATE">Home State:</label>
-            <input style="font-family:Source Sans Pro" type="text" id="HOME STATE" name="HOME STATE"><br><br>
+            <input type="radio" id="cov" name="covid" value="YES">
+            <label for="cov">Yes</label><br><br>
+            <input type="radio" id="cov1" name="covid" value="NO">
+            <label for="cov1">No</label><br><br>
+            <label for="home_state">Home State:</label>
+            <input style="font-family:Source Sans Pro" type="text" id="home_state" name="home_state"><br><br>
             <label>Vaccination Certificate:</label><br><br>
             <input style="font-family:Source Sans Pro" type="file" id="myFile" name="filename">
             <br><br>
@@ -109,8 +110,8 @@
             <br><br><br><br>
             <button id="previous" type="PREVIOUS" form="form2" value="PREVIOUS">Previous</button>
             <br><br>
-            <button id="submit" type="SUBMIT" form = "form2" value="SUBMIT">Submit</button>
-           
+            <button id="submit" type="SUBMIT" form="form2" value="SUBMIT" onclick="addData()">Submit</button>
+
     </div>
 
     <script src="./assets/main.js"></script>

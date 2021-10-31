@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 body{
-    padding: 0;
+    padding-bottom: 0;
     margin: 0;
     box-sizing: border-box;
     background: linear-gradient(120deg,#2980b9, #8e44ad);
@@ -34,6 +34,7 @@ form label{
         padding: 30px 40px;
         border-bottom: 1px solid silver;
         box-sizing: border-box;
+        margin: 30px;
 }
 
 #part2{
@@ -50,6 +51,7 @@ form label{
     padding: 30px 40px;
     border-bottom: 1px solid silver;
     box-sizing: border-box;
+    margin-top: 30px;
 }
 
 #next{
