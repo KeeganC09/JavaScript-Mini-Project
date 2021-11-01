@@ -18,6 +18,8 @@ form input, form select{
 
 form label{
     font-size: 20px;
+    display: inline-block;
+    width: 130px;
 }
 
 #part1{
@@ -40,8 +42,8 @@ form label{
 #part2{
   
     position: absolute;
-    top: 77%;
-    left: 50%;
+    top: 75.5%;
+    left: 52%;
     transform: translate(-50%, -50%);
     width: 600px;
     background: white;
