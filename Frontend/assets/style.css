@@ -4,7 +4,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     background: linear-gradient(120deg,#2980b9, #8e44ad);
-    height: 150vh;
+    height: 190vh;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -55,11 +55,10 @@ form label{
 }
 
 #part3{
-
-    position: right;
-    right: 70%;
-    transform: translate(+200%, +155%);
-    width: 50%;
+    position: absolute;
+    top: 120vh;
+    left: 29%;
+    width: 600px;
     background: white;
     border-radius: 70px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
@@ -68,7 +67,6 @@ form label{
     border-bottom: 1px solid silver;
     box-sizing: border-box;
     margin-top: 30px;
-    width: 500px;
     background: white;
     border-radius: 25px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
