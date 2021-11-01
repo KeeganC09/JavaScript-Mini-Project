@@ -84,19 +84,17 @@
             <label for="YES">Yes</label>
             <input type="radio" id="NO" name="VACCINATED" value="NO">
             <label for="NO">No</label><br><br>
-            <label>Vaccination Status:</label>
-            <label for="DOSE"></label>
+            <label for="DOSE">Vaccination Status:</label>
             <select style="font-family:Source Sans Pro" name="DOSE" id="DOSE">
                 <optgroup style="font-family: 'Source Sans Pro'">
                     <option value="1st DOSE">1st Dose</option>
                     <option value="2nd DOSE">2nd Dose</option>
                 </optgroup>
-
             </select>
             <br><br>
-            <label>If contracted COVID Before:</label><br><br>
+            <label>If contracted COVID Before:</label>
             <input type="radio" id="cov" name="covid" value="YES">
-            <label for="cov">Yes</label><br><br>
+            <label for="cov">Yes</label>
             <input type="radio" id="cov1" name="covid" value="NO">
             <label for="cov1">No</label><br><br>
             <label for="home_state">Home State:</label>
@@ -107,7 +105,7 @@
             <label>RTPCR Test Report:</label><br>
             <p></p>
             <input style="font-family:Source Sans Pro" type="file" id="myFile" name="filename">
-            <br><br><br><br>
+            <br><br><br>
             <button id="previous" type="PREVIOUS" form="form2" value="PREVIOUS">Previous</button>
             <br><br>
             <button id="submit" type="SUBMIT" form="form2" value="SUBMIT" onclick="addData()">Submit</button>
