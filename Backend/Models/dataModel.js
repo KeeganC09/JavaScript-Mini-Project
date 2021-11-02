@@ -84,7 +84,13 @@ const dataSchema = mongoose.Schema({
         type: String,
         required: [true, "Please provide your home state"],
         trim: true
-    }
+    },
+
+    uploadFile: [{
+        file: {
+            type: String
+        }
+    }]
 }, {
     timestamps: true
 });

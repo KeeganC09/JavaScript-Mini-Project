@@ -3,6 +3,10 @@ const router = express.Router();
 
 const dataController = require("../Controllers/dataController");
 
-router.post('/', dataController.addData);
+const {
+    upload
+} = require("../middleware/uploadMiddleware");
+
+router.post('/', upload.array('uploadFile'), dataController.addData);
 
 module.exports = router;

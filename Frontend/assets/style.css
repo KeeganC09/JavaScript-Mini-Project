@@ -131,6 +131,10 @@ form label{
     background-color: #8e44ad;
     transition: .5s;
   }
+
+  #submit:active{
+    background-color:#2691d9;
+  }
   
 nav{
     background-color: #e9e9e900;

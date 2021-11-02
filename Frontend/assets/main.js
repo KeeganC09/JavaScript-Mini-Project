@@ -13,7 +13,7 @@ $(document).ready(function () {
 });
 
 
-function addData() {
+function addData(e) {
 
     let fname = document.getElementById("fname").value;
     let lname = document.getElementById("lname").value;
@@ -29,6 +29,7 @@ function addData() {
     let vaccine_status = document.getElementById("DOSE").value;
     let covid_status = document.querySelector('input[name="covid"]:checked').value;
     let home_state = document.getElementById("home_state").value;
+
 
     fetch('http://localhost:8006/data', {
         method: 'POST',
@@ -56,7 +57,11 @@ function addData() {
     })
         .then(data => console.log(data))
         .catch(error => console.log("ERROR"))
+
+    alert("Data Submitted Successfully. Thank You!!");
 }
+
+
 async function getCovidApi() {
     const jsonFormatData = await fetch("https://api.covid19api.com/summary");
     const jsFormatData = await jsonFormatData.json();
