@@ -57,8 +57,12 @@ function addData(e) {
     })
         .then(data => console.log(data))
         .catch(error => console.log("ERROR"))
-
-    alert("Data Submitted Successfully. Thank You!!");
+        
+    Swal.fire(
+        'Data Submitted Successfully',
+        'Thank You!',
+        'success'
+      );
 }
 
 
