@@ -57,12 +57,14 @@ function addData(e) {
     })
         .then(data => console.log(data))
         .catch(error => console.log("ERROR"))
-        
-    Swal.fire(
-        'Data Submitted Successfully',
-        'Thank You!',
-        'success'
-      );
+
+    Swal.fire({
+        title: "Thank You!",
+        text: "Data Submitted Successfully!",
+        icon: "success"
+    }).then(function () {
+        location.reload();
+    });
 }
 
 
