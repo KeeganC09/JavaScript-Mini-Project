@@ -30,41 +30,75 @@ function addData(e) {
     let covid_status = document.querySelector('input[name="covid"]:checked').value;
     let home_state = document.getElementById("home_state").value;
 
+    const formData = new FormData();
+    const fileField = document.querySelector('input[type="file"]');
+
+    formData.append('fname', fname);
+    formData.append('lname', lname);
+    formData.append('regNumber', regNumber);
+    formData.append('email', email);
+    formData.append('dept', dept);
+    formData.append('section', section);
+    formData.append('year', year);
+    formData.append('hosteler', hosteler);
+    formData.append('age', age);
+    formData.append('gender', gender);
+    formData.append('vaccine', vaccine);
+    formData.append('vaccine_dose', vaccine_status);
+    formData.append('covid_status', covid_status);
+    formData.append('home_state', home_state);
+
+    formData.append('uploadFile', fileField.files[0])
 
     fetch('http://localhost:8006/data', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            "fname": fname,
-            "lname": lname,
-            "regNumber": regNumber,
-            "email": email,
-            "dept": dept,
-            "section": section,
-            "year": year,
-            "hosteler": hosteler,
-            "age": age,
-            "gender": gender,
-            "vaccine": vaccine,
-            "vaccine_dose": vaccine_status,
-            "covid_status": covid_status,
-            "home_state": home_state
-        })
+
+        body: formData
     }).then(res => {
         return res.json();
     })
         .then(data => console.log(data))
-        .catch(error => console.log("ERROR"))
+        .catch(error => console.log("error"))
 
-    Swal.fire({
+
+
+    // fetch('http://localhost:8006/data', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify({
+    //         "fname": fname,
+    //         "lname": lname,
+    //         "regNumber": regNumber,
+    //         "email": email,
+    //         "dept": dept,
+    //         "section": section,
+    //         "year": year,
+    //         "hosteler": hosteler,
+    //         "age": age,
+    //         "gender": gender,
+    //         "vaccine": vaccine,
+    //         "vaccine_dose": vaccine_status,
+    //         "covid_status": covid_status,
+    //         "home_state": home_state,
+    //         "uploadFile": certificate
+    //     })
+    // }).then(res => {
+    //     return res.json();
+    // })
+    //     .then(data => console.log(data))
+    //     .catch(error => console.log("error"))
+
+    /*Swal.fire({
         title: "Thank You!",
         text: "Data Submitted Successfully!",
         icon: "success"
     }).then(function () {
         location.reload();
-    });
+    });*/
+
+    alert("Data Submitted. Thank You");
 }
 
 

@@ -19,14 +19,16 @@ const addData = async (req, res) => {
         home_state
     } = req.body;
 
-    // let uploadFileList = []
-    // if (req.files.length > 0) {
-    //     uploadFileList = req.files.map((file) => {
-    //         return {
-    //             file: file.path
-    //         }
-    //     })
-    // }
+    let uploadFileList = []
+    if (req.files.length > 0) {
+        uploadFileList = req.files.map((file) => {
+            return {
+                file: file.path
+            }
+        })
+    }
+
+
 
     const _data = new dataModel({
         fname,
@@ -43,7 +45,7 @@ const addData = async (req, res) => {
         vaccine_dose,
         covid_status,
         home_state,
-        // "uploadFile": uploadFileList,
+        "uploadFile": uploadFileList,
     })
 
     _data.save((error, data) => {
