@@ -5,8 +5,8 @@
 ### Methodology
 <p>Student data will be acquired with the help of a form. The students will have to furnish relevant details such as name, register number, year, department,  section, vaccination status, history of infection(if previously affected or not) and home state. If the student is fully or partially vaccinated he/she will be required to upload the vaccination certificate. This data will then be stored in a database which will be available to the college authorities for further reference.</p>
 ### Tech Stack!
-<p>Frontend: HTML5, CSS3, Bootstrap, JavaScript/
-Backend: NodeJS, ExpressJS, Mongoose/
+<p>Frontend: HTML5, CSS3, Bootstrap, JavaScript <br>
+Backend: NodeJS, ExpressJS, Mongoose <br>
 Database: MongoDB</p>
 
 
